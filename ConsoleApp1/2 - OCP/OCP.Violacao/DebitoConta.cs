@@ -1,0 +1,17 @@
+﻿namespace Pitte.SOLID.OCP.Violacao;
+    public class DebitoConta
+    {
+        public void Debitar(decimal valor, string conta, TipoConta tipoConta)
+        {
+            if (tipoConta is TipoConta.Corrente)
+            {
+                // Debita Conta Corrente
+            }
+
+            if (tipoConta == TipoConta.Poupanca)
+            {
+                // Valida Aniversário da Conta
+                // Debita Conta Poupança
+            }
+        }
+    }
